@@ -30,7 +30,7 @@ export const MainSub = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 6%;
-  padding-top: 3em;
+  padding-top: 4em;
 `;
 
 export const MainTitle = styled.h1`
@@ -40,4 +40,5 @@ export const MainTitle = styled.h1`
 
 export const MainDisc = styled.div`
   max-width: 50%;
+  line-height: 1.45em;
 `;

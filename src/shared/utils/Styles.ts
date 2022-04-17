@@ -77,7 +77,7 @@ export const zIndexValues = {
 };
 
 export const font = {
-  regular: 'font-family: "Roboto"; font-weight: normal;',
+  regular: 'font-family: "AlongSans"; font-weight: normal;',
   light: 'font-family: "RobotoLight"; font-weight: normal;',
   bold: 'font-family: "RobotoBold";',
   black: 'font-family: "CircularStdBlack"; font-weight: normal;',

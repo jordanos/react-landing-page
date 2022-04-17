@@ -30,12 +30,14 @@ const Intro = () => {
         <div
           style={{
             display: 'flex',
-            justifyContent: 'space-between',
-            maxWidth: '19em',
-            marginTop: '2em',
+            justifyContent: 'flex-start',
+            marginTop: '2.5em',
           }}>
           <StyledButton bg={colors.textSecondary}>Get Started</StyledButton>
-          <StyledButton bg={colors.textSecondary} outline>
+          <StyledButton
+            style={{ marginLeft: '1.5em' }}
+            bg={colors.textSecondary}
+            outline>
             Our Services
           </StyledButton>
         </div>

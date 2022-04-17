@@ -22,8 +22,7 @@ export const StyledNavList = styled.ul`
   & > li {
     margin-right: 2em;
     display: inline;
-    font-size: 14px;
-    font-family: 'Roboto';
+    font-family: 'AlongSans';
   }
 `;
 

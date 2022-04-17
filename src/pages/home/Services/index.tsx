@@ -1,6 +1,13 @@
 import React from 'react';
+import Card from 'shared/components/Card';
 import { colors } from 'shared/utils/Styles';
-import { MainDisc, MainSub, MainTitle } from '../Main/Styles';
+import {
+  MainDisc,
+  MainSectionWrapper,
+  MainSub,
+  MainTitle,
+  SubSectionWrapper,
+} from '../Main/Styles';
 
 const Services = () => {
   return (
@@ -26,6 +33,48 @@ const Services = () => {
           future operations.
         </MainDisc>
       </MainSub>
+      <MainSectionWrapper>
+        <SubSectionWrapper>
+          <Card
+            title="Enterprise Software Development"
+            disc="Our enterprise software takes a multi-disciplinary approach, with features such as CRM (Customer Relationship Management), HRM (Human Resource Management), accounting, Inventory Managment System, Sales(POS) and more. "
+          />
+        </SubSectionWrapper>
+        <SubSectionWrapper>
+          <Card
+            title="Mobile App Development"
+            disc="Our software professionals don’t simply produce a basic mobile application, they implement clean, responsive, and user-friendly designs so your user comes to your app not only because it’s useful but also because they love the feeling of interacting with it. "
+          />
+        </SubSectionWrapper>
+      </MainSectionWrapper>
+      <MainSectionWrapper pd="0">
+        <SubSectionWrapper>
+          <Card
+            title="Enterprise Software Development"
+            disc="Our enterprise software takes a multi-disciplinary approach, with features such as CRM (Customer Relationship Management), HRM (Human Resource Management), accounting, Inventory Managment System, Sales(POS) and more. "
+          />
+        </SubSectionWrapper>
+        <SubSectionWrapper>
+          <Card
+            title="Enterprise Software Development"
+            disc="Our enterprise software takes a multi-disciplinary approach, with features such as CRM (Customer Relationship Management), HRM (Human Resource Management), accounting, Inventory Managment System, Sales(POS) and more. "
+          />
+        </SubSectionWrapper>
+      </MainSectionWrapper>
+      <MainSectionWrapper>
+        <SubSectionWrapper>
+          <Card
+            title="Enterprise Software Development"
+            disc="Our enterprise software takes a multi-disciplinary approach, with features such as CRM (Customer Relationship Management), HRM (Human Resource Management), accounting, Inventory Managment System, Sales(POS) and more. "
+          />
+        </SubSectionWrapper>
+        <SubSectionWrapper>
+          <Card
+            title="Enterprise Software Development"
+            disc="Our enterprise software takes a multi-disciplinary approach, with features such as CRM (Customer Relationship Management), HRM (Human Resource Management), accounting, Inventory Managment System, Sales(POS) and more. "
+          />
+        </SubSectionWrapper>
+      </MainSectionWrapper>
     </div>
   );
 };
