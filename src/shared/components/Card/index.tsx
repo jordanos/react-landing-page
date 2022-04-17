@@ -13,7 +13,7 @@ const Card: React.FC<Props> = ({ title, disc }) => {
       <h4 style={{ marginBottom: '1em', color: colors.textDarkest }}>
         {title}
       </h4>
-      <p>{disc}</p>
+      <p style={{ fontSize: '0.9rem', lineHeight: '1.75em' }}>{disc}</p>
     </StyledCard>
   );
 };
@@ -41,7 +41,7 @@ export const ShadowCard: React.FC<PropsShadow> = (props) => {
       <p
         style={{
           textAlign: 'center',
-          fontSize: '1.25rem',
+          fontSize: '1rem',
         }}>
         {disc}
       </p>

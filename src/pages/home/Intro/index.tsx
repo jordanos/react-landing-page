@@ -2,15 +2,18 @@ import React from 'react';
 import IntroImage from 'shared/assets/img/IntroImage';
 import StyledButton from 'shared/components/Button/Styles';
 import { colors } from 'shared/utils/Styles';
-import { MainSectionWrapper, SubSectionWrapper } from '../Main/Styles';
+import {
+  StyledMainSectionWrapper,
+  StyledSubSectionWrapper,
+} from '../Main/Styles';
 import background from './bg-gradient.png';
 
 const Intro = () => {
   return (
-    <MainSectionWrapper
+    <StyledMainSectionWrapper
       pd="6em"
       style={{ background: `url(${background}) center bottom no-repeat` }}>
-      <SubSectionWrapper>
+      <StyledSubSectionWrapper>
         <div
           style={{
             fontFamily: "'AlongSansBolder', sans-serif",
@@ -41,11 +44,11 @@ const Intro = () => {
             Our Services
           </StyledButton>
         </div>
-      </SubSectionWrapper>
-      <SubSectionWrapper>
+      </StyledSubSectionWrapper>
+      <StyledSubSectionWrapper>
         <IntroImage />
-      </SubSectionWrapper>
-    </MainSectionWrapper>
+      </StyledSubSectionWrapper>
+    </StyledMainSectionWrapper>
   );
 };
 

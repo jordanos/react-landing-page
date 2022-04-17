@@ -1,3 +1,4 @@
+import { mixin } from 'shared/utils/Styles';
 import styled from 'styled-components';
 
 interface Props {
@@ -13,6 +14,7 @@ const StyledButton = styled.button<Props>`
   color: ${(props) => (props.color ? props.color : 'white')};
   border-radius: 50px;
   padding: 0.5em 2em;
+  ${mixin.clickable};
 
   ${(props) =>
     props.outline

@@ -3,8 +3,9 @@ import AboutUs from '../AboutUs';
 import ContactUs from '../ContactUs';
 import Intro from '../Intro';
 import Services from '../Services';
+import Testimonials from '../Testimonials';
 import WhyUs from '../WhyUs';
-import { MainSectionWrapper, StyledMain } from './Styles';
+import { StyledMain } from './Styles';
 
 const Main = () => {
   return (
@@ -13,7 +14,7 @@ const Main = () => {
       <AboutUs />
       <Services />
       <WhyUs />
-      <MainSectionWrapper>Portofolio</MainSectionWrapper>
+      <Testimonials />
       <ContactUs />
     </StyledMain>
   );

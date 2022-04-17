@@ -3,37 +3,37 @@ import RicaIcon from 'shared/assets/icons/RicaIcon';
 import { ShadowCard } from 'shared/components/Card';
 import { colors } from 'shared/utils/Styles';
 import {
-  MainDisc,
-  MainSectionWrapper,
-  MainSub,
-  MainTitle,
+  StyledMainDisc,
+  StyledMainSectionWrapper,
+  StyledMainSub,
+  StyledMainTitle,
 } from '../Main/Styles';
 
 const WhyUs = () => {
   return (
     <>
-      <MainSub>
-        <MainTitle
+      <StyledMainSub>
+        <StyledMainTitle
           style={{
             color: colors.textDarkest,
-            fontSize: '2.5rem',
+            fontSize: '2rem',
           }}>
           Why choose us?
-        </MainTitle>
-        <MainDisc
+        </StyledMainTitle>
+        <StyledMainDisc
           style={{
             color: colors.textDarkest,
             textAlign: 'center',
-            fontSize: '1.2rem',
+            fontSize: '1rem',
           }}>
           We have highly skilled engineers with extensive technical knowledge
           and experience in using the latest software standards, tools,
           platforms, frameworks, and technologies, and we invest continuously in
           training and education so that we can respond to any new technology
           challenges and demands from our clients.
-        </MainDisc>
-      </MainSub>
-      <MainSectionWrapper>
+        </StyledMainDisc>
+      </StyledMainSub>
+      <StyledMainSectionWrapper>
         <ShadowCard
           icon={<RicaIcon />}
           title="Skill"
@@ -49,7 +49,7 @@ const WhyUs = () => {
           title="Time Bound"
           disc="Despite the tight deadline, we prioritize work in sprints, manage blocks with daily stand-ups and agile approach, and do retrospectives.  "
         />
-      </MainSectionWrapper>
+      </StyledMainSectionWrapper>
     </>
   );
 };
