@@ -1,6 +1,10 @@
 import Color from 'color';
 import { css } from 'styled-components';
 
+export const breakpoints = {
+  mobile: '768px',
+};
+
 export const colors = {
   primary: '#FF9900', // orange
   success: '#58BA6E', // green
