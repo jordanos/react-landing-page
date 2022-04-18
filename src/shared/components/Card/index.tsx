@@ -31,9 +31,7 @@ export const ShadowCard: React.FC<PropsShadow> = (props) => {
   const { icon, title, disc } = props;
   return (
     <StyledShadowCard>
-      <div style={{ marginBottom: '2em', color: colors.textDarkest }}>
-        {icon}
-      </div>
+      <div style={{ marginBottom: '2em' }}>{icon}</div>
       <h4
         style={{
           marginBottom: '1em',

@@ -1,5 +1,7 @@
 import React from 'react';
-import RicaIcon from 'shared/assets/icons/RicaIcon';
+import BudgetIcon from 'shared/assets/icons/BudgetIcon';
+import GlassIcon from 'shared/assets/icons/GlassIcon';
+import RoundIcon from 'shared/assets/icons/RoundIcon';
 import { ShadowCard } from 'shared/components/Card';
 import { colors } from 'shared/utils/Styles';
 import {
@@ -35,17 +37,17 @@ const WhyUs = () => {
       </StyledMainSub>
       <StyledMainSectionWrapper>
         <ShadowCard
-          icon={<RicaIcon />}
+          icon={<RoundIcon />}
           title="Skill"
           disc="We have highly trained engineers with in-depth technical knowledge and hands-on expertise with the most up-to-date software standards. "
         />
         <ShadowCard
-          icon={<RicaIcon />}
+          icon={<BudgetIcon />}
           title="Budget"
           disc="We bring a wealth of experience to bear on delivering solutions that match the needs, objectives, and budgets of our clients. We achieve this by placing our customers at the center of everything we do.  "
         />
         <ShadowCard
-          icon={<RicaIcon />}
+          icon={<GlassIcon />}
           title="Time Bound"
           disc="Despite the tight deadline, we prioritize work in sprints, manage blocks with daily stand-ups and agile approach, and do retrospectives.  "
         />
