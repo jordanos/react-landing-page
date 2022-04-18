@@ -19,7 +19,7 @@ const StyledNav = styled.nav`
 `;
 
 export const StyledNavList = styled.ul`
-  & > li {
+  & > * {
     margin-right: 2em;
     display: inline;
     font-family: 'AlongSans';

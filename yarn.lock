@@ -7486,6 +7486,11 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-single-page-navigation@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-single-page-navigation/-/react-single-page-navigation-1.0.1.tgz#24b124c103ff98a78c8ff7069c4394b99c3ff193"
+  integrity sha512-umT06lwVXAEGoRpG4UqWs3ULIpq2lTrsHRlEudnlR7B6xvqehVg7lAFaz/2i61y6WQ0ZbBFQo9o11pvZS3XgVw==
+
 react-slideshow-image@^3.7.3:
   version "3.7.3"
   resolved "https://registry.yarnpkg.com/react-slideshow-image/-/react-slideshow-image-3.7.3.tgz#9307901eae0409aa5a1a04e002c22077cd0bf4fb"

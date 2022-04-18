@@ -1,51 +1,75 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import RicaIcon from 'shared/assets/icons/RicaIcon';
 import NavList from './NavList';
 import StyledNav from './Styles';
 
-interface NavLinkProps {
-  navLinkId: String;
-  scrollToId: String;
-  activeNavLinkId: String;
-  setActiveNavLinkId: Function;
+interface Props {
+  goTo: Function;
+  activeElement: string;
 }
 
-// const NavLink: React.FC<NavLinkProps> = ({
-//   navLinkId,
-//   scrollToId,
-//   activeNavLinkId,
-//   setActiveNavLinkId,
-// }) => {
-//   const handleClick = () => {
-//     setActiveNavLinkId(navLinkId);
-//     document.getElementById(scrollToId).scrollIntoView({
-//       behavior: 'smooth', // gives an ease-in-out effect to our scroll
-//     });
-//   };
-
-//   return (
-//     // eslint-disable-next-line jsx-a11y/click-events-have-key-events
-//     // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-//     <li
-//       id={`${navLinkId}`}
-//       className={activeNavLinkId === navLinkId ? 'activeClass' : ''}
-//       onClick={handleClick}>
-//       {navLinkId}
-//     </li>
-//   );
-// };
-
-const NavUi = () => {
+const NavUi: React.FC<Props> = ({ goTo, activeElement }) => {
   return (
     <StyledNav>
       <RicaIcon />
       <NavList>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Services</li>
-        <li>Testimonials</li>
-        <li>Contact</li>
+        <span
+          style={{
+            cursor: 'pointer',
+            fontFamily:
+              activeElement === 'Intro'
+                ? "'AlongSansBold', sans-serif"
+                : "'AlongSans', sans-serif",
+          }}
+          onClick={() => goTo('Intro')}>
+          Home
+        </span>
+        <span
+          style={{
+            cursor: 'pointer',
+            fontFamily:
+              activeElement === 'About'
+                ? "'AlongSansBold', sans-serif"
+                : "'AlongSans', sans-serif",
+          }}
+          onClick={() => goTo('About')}>
+          About Us
+        </span>
+        <span
+          style={{
+            cursor: 'pointer',
+            fontFamily:
+              activeElement === 'Services'
+                ? "'AlongSansBold', sans-serif"
+                : "'AlongSans', sans-serif",
+          }}
+          onClick={() => goTo('Services')}>
+          Services
+        </span>
+        <span
+          style={{
+            cursor: 'pointer',
+            fontFamily:
+              activeElement === 'Testimonials'
+                ? "'AlongSansBold', sans-serif"
+                : "'AlongSans', sans-serif",
+          }}
+          onClick={() => goTo('Testimonials')}>
+          Testimonials
+        </span>
+        <span
+          style={{
+            cursor: 'pointer',
+            fontFamily:
+              activeElement === 'Contact'
+                ? "'AlongSansBold', sans-serif"
+                : "'AlongSans', sans-serif",
+          }}
+          onClick={() => goTo('Contact')}>
+          Contact
+        </span>
       </NavList>
     </StyledNav>
   );

@@ -1,28 +1,13 @@
 import React from 'react';
 import NavUi from './NavUi';
 
-const navLinks = [
-  { navLinkId: 'Home', scrollToId: 'homeContainer' }, // etc.
-];
+interface Props {
+  goTo: Function;
+  activeElement: any;
+}
 
-// const Nav = () => {
-//   const [activeNavLinkId, setActiveNavLinkId] = useState('');
-
-//   return (
-//     <nav>
-//       {navLinks.map(({ navLinkId, scrollToId }) => (
-//         <NavLink
-//           navLinkId={navLinkId}
-//           scrollToId={scrollToId}
-//           activeNavLinkId={activeNavLinkId}
-//           setActiveNavLinkId={setActiveNavLinkId}
-//         />
-//       ))}
-//     </nav>
-//   );
-// };
-const Nav = () => {
-  return <NavUi />;
+const Nav: React.FC<Props> = ({ goTo, activeElement }) => {
+  return <NavUi goTo={goTo} activeElement={activeElement} />;
 };
 
 export default Nav;

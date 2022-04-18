@@ -11,7 +11,7 @@ import background from './bg-gradient.png';
 const Intro = () => {
   return (
     <StyledMainSectionWrapper
-      pd="6em"
+      pd="7em"
       style={{ background: `url(${background}) center bottom no-repeat` }}>
       <StyledSubSectionWrapper>
         <div
