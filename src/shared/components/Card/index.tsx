@@ -1,4 +1,6 @@
+import 'animate.css/animate.min.css';
 import React from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { colors } from 'shared/utils/Styles';
 import StyledCard, { StyledShadowCard } from './Styles';
 
@@ -9,12 +11,14 @@ interface Props {
 
 const Card: React.FC<Props> = ({ title, disc }) => {
   return (
-    <StyledCard>
-      <h4 style={{ marginBottom: '1em', color: colors.textDarkest }}>
-        {title}
-      </h4>
-      <p style={{ fontSize: '0.9rem', lineHeight: '1.75em' }}>{disc}</p>
-    </StyledCard>
+    <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
+      <StyledCard>
+        <h4 style={{ marginBottom: '1em', color: colors.textDarkest }}>
+          {title}
+        </h4>
+        <p style={{ fontSize: '0.9rem', lineHeight: '1.75em' }}>{disc}</p>
+      </StyledCard>
+    </AnimationOnScroll>
   );
 };
 
@@ -27,9 +31,7 @@ export const ShadowCard: React.FC<PropsShadow> = (props) => {
   const { icon, title, disc } = props;
   return (
     <StyledShadowCard>
-      <div style={{ marginBottom: '2em', color: colors.textDarkest }}>
-        {icon}
-      </div>
+      <div style={{ marginBottom: '2em' }}>{icon}</div>
       <h4
         style={{
           marginBottom: '1em',

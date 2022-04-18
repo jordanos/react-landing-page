@@ -1,4 +1,4 @@
-import { colors, zIndexValues } from 'shared/utils/Styles';
+import { breakpoints, colors, zIndexValues } from 'shared/utils/Styles';
 import styled from 'styled-components';
 
 const StyledNav = styled.nav`
@@ -23,6 +23,18 @@ export const StyledNavList = styled.ul`
     margin-right: 2em;
     display: inline;
     font-family: 'AlongSans';
+  }
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    display: none;
+  }
+`;
+
+export const StyledBurgerMenu = styled.ul`
+  display: none;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    display: block;
   }
 `;
 

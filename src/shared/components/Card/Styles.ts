@@ -1,4 +1,4 @@
-import { colors } from 'shared/utils/Styles';
+import { breakpoints, colors } from 'shared/utils/Styles';
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
@@ -11,6 +11,11 @@ const StyledCard = styled.div`
   background: ${colors.backgroundLightest};
   border-radius: 12px;
   padding: 2em 4em;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+    margin: 2em 0;
+  }
 `;
 
 export const StyledShadowCard = styled.div`
@@ -29,6 +34,11 @@ export const StyledShadowCard = styled.div`
   &:hover {
     background: ${colors.textSecondary};
     color: white;
+  }
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    width: 80%;
+    margin: 2em 0;
   }
 `;
 

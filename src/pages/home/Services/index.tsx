@@ -27,7 +27,7 @@ const Services = () => {
           style={{
             color: colors.textLightest,
           }}>
-          Rica Technology can MainDiscut together full teams of engineers,
+          Rica Technologies can MainDiscut together full teams of engineers,
           developers, and other experts to complete a project. Our main goal is
           to provide cutting-edge solutions that will benefit a company&apos
           future operations.

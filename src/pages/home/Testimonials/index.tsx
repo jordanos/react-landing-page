@@ -30,6 +30,7 @@ const Testimonials = () => {
         <StyledMainTitle
           style={{
             fontSize: '2rem',
+            marginBottom: '2em',
           }}>
           Testimonials
         </StyledMainTitle>

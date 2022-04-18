@@ -1,4 +1,4 @@
-import { colors } from 'shared/utils/Styles';
+import { breakpoints, colors } from 'shared/utils/Styles';
 import styled from 'styled-components';
 
 export const StyledFooter = styled.footer`
@@ -18,12 +18,23 @@ export const StyledFooterMain = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const StyledFooterCol = styled.div`
   width: 30%;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+    margin-bottom: 2em;
+  }
 `;
 
 interface PropsTitle {

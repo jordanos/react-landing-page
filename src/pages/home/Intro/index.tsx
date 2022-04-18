@@ -45,6 +45,7 @@ const Intro = () => {
           </StyledButton>
         </div>
       </StyledSubSectionWrapper>
+
       <StyledSubSectionWrapper>
         <IntroImage />
       </StyledSubSectionWrapper>
