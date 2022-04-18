@@ -10,15 +10,15 @@ import StyledTestimonials from './Styles';
 
 const slideImages = [
   {
-    url: 'https://static.wixstatic.com/media/72c0b2_9417bad731e543578911f6110f4e9a2d~mv2.jpg/v1/fill/w_924,h_476,al_c,q_90/72c0b2_9417bad731e543578911f6110f4e9a2d~mv2.jpg',
+    url: 'https://i.ibb.co/d287R4z/testimonial-1.jpg',
     caption: 'We were proud with Rica.',
   },
   {
-    url: 'https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/2660/posts/32707/image/fox-tech-colorful-logo-YE29W9Q.jpg',
+    url: 'https://i.ibb.co/VTz0X6r/testimonial-2.jpg',
     caption: 'Rica is the best, they always deliver a quality product on time.',
   },
   {
-    url: 'https://media.graphcms.com/en7vBYDQ2Kkuvgkyl04R',
+    url: 'https://i.ibb.co/56mZDY6/testimonial-3.png',
     caption: 'We had a greate time working with rica.',
   },
 ];
