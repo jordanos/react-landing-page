@@ -10,6 +10,7 @@ import Intro from './Intro';
 import { StyledMain } from './Main/Styles';
 import Services from './Services';
 import Testimonials from './Testimonials';
+import WhyUs from './WhyUs';
 
 // tslint:disable-next-line:no-submodule-imports
 
@@ -40,9 +41,13 @@ const Home = () => {
             <section ref={refs.Services}>
               <Services />
             </section>
+            <section>
+              <WhyUs />
+            </section>
             <section ref={refs.Testimonials}>
               <Testimonials />
             </section>
+
             <section ref={refs.Contact}>
               <ContactUS />
             </section>
