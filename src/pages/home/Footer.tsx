@@ -20,7 +20,7 @@ const Footer = () => {
             }}>
             Rica
           </StyledFooterTitle>
-          Rica Technology can put together complete teams of engineers,
+          Rica Technologies can put together complete teams of engineers,
           developers, and other experts to see a project through from start to
           finish. Our main goal is to provide clever solutions that will help
           the business function smoothly in the future.{' '}

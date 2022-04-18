@@ -76,7 +76,7 @@ const AboutUs = () => {
             style={{
               color: '#283d50',
             }}>
-            BitApps Specilization.
+            RicaTechs Specilization.
           </StyledMainTitle>
           <StyledMainDisc width="100%">
             We specialize in a variety of sectors where innovation, integration,
